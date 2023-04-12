@@ -56,8 +56,8 @@ const Students: FC = () => {
             <div className="studentWrapper">
               <div className="student" key={index}>name: {element.name}</div>
                 <Button
-                  variant="outlined"
-                  sx={{ color: "darkcyan", marginLeft:'1rem' }}
+                  variant="contained"
+                  sx={{ backgroundColor: "darkcyan", marginLeft:'1rem' }}
                   onClick={() => {
                     deleteStudent(element._id!);
                   }}>
@@ -79,8 +79,8 @@ const Students: FC = () => {
         ))}
 
       <Button
-        variant="outlined"
-        sx={{ color: "darkcyan", marginTop: "2rem" }}
+        variant="contained"
+        sx={{ backgroundColor: "darkcyan", marginTop: "2rem" }}
         onClick={() => {
           history.push(ADD_STUDENT_ROUTE);
         }}

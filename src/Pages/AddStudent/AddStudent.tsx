@@ -76,8 +76,8 @@ const AddStudent: FC = () => {
           />
         </div>
         <Button
-          variant="outlined"
-          sx={{ color: "darkcyan", marginTop: "2rem" }}
+          variant="contained"
+          sx={{ backgroundColor: "darkcyan", marginTop: "2rem" }}
           onClick={() => {
             addStudent();
           }}
